@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.contacts-block {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.calculator-block {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.faq-block {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.testimonials-block {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.about-block {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.portfolio-block {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+#warning {
+    font-size: 0.8em; /* Уменьшает размер шрифта */
+}
+
+.card-text {
+    font-size: 0.875rem; /* Новый размер шрифта */
+}
