@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const result = document.getElementById('result');
     const warning = document.getElementById('warning');
 
-    // Функция для обновления цен и вывода результата
     function updatePrices() {
         const meters = parseFloat(meterInput.value);
         const stoneType = document.querySelector('input[name="stoneType"]:checked');
@@ -30,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         warning.innerHTML = '*Это примерные цены. Точную цену уточняйте у консультанта по телефону.';
     }
 
-    // Слушатель изменений в поле ввода и выборе типа камня
     meterInput.addEventListener('input', function () {
-        // Удаляем все символы, кроме цифр
         meterInput.value = meterInput.value.replace(/[^0-9]/g, '');
         updatePrices();
     });
@@ -41,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         radio.addEventListener('change', updatePrices);
     });
 
-    // Очистка поля ввода при фокусе
     meterInput.addEventListener('focus', function () {
         this.value = '';
         result.innerHTML = '';

@@ -38,9 +38,18 @@ body {
 }
 
 #warning {
-    font-size: 0.8em; /* Уменьшает размер шрифта */
+    font-size: 0.8em;
 }
 
 .card-text {
-    font-size: 0.875rem; /* Новый размер шрифта */
+    font-size: 0.875rem;
+}
+
+.social {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social:hover {
+    color: inherit;
 }
