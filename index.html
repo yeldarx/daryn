@@ -13,6 +13,11 @@
       crossorigin="anonymous"
     ></script>
     <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -109,91 +114,192 @@
         </h4>
         <div class="card mb-3">
           <div class="card-body">
-            <p class="card-text">
-              <p class="text-center">
-                Можете вызвать замерщика, который вам вежливо все объяснит, измерит
-                и оценит.  <span class="badge badge-success">Бесплатно!</span>
-              </p>
-
-              <div class="contacts-block p-3 mb-4">
-                <div class="text-center">
-                  <a
-                    href="https://wa.me/77711020650/?text=Привет,%20я%20хочу%20вызвать%20замерщика"
-                    class="btn btn-success mx-2"
-                    target="_blank"
-                  >
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                  </a>
-                  <a
-                    href="tel:+77711020650"
-                    class="btn btn-success mx-2"
-                    target="_blank"
-                  >
-                    <i class="fa-solid fa-phone-volume"></i> +7 (771) 102–06–50
-                  </a>
-                </div>
-              </div>
-
+            <p class="card-text"></p>
+            <p class="text-center">
+              Можете вызвать замерщика, который вам вежливо все объяснит,
+              измерит и оценит.
+              <span class="badge badge-success">Бесплатно!</span>
             </p>
+
+            <div class="contacts-block p-3 mb-4">
+              <div class="text-center">
+                <a
+                  href="https://wa.me/77711020650/?text=Привет,%20я%20хочу%20вызвать%20замерщика"
+                  class="btn btn-success mx-2"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a
+                  href="tel:+77711020650"
+                  class="btn btn-success mx-2"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-phone-volume"></i> +7 (771) 102–06–50
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Process -->
 
-
-      <div class="testimonials-block p-3 mb-4">
-        
+      <div class="process-block p-3 mb-4">
         <h3 class="text-center">Как мы работаем?</h3>
 
-<!--  -->
-     
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Шаг 1
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Шаг 2
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Шаг 3
+            </button>
+            <button
+              class="nav-link"
+              id="nav-four-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-four"
+              type="button"
+              role="tab"
+              aria-controls="nav-four"
+              aria-selected="false"
+            >
+              Шаг 4
+            </button>
+          </div>
+        </nav>
 
-      <div class="card mb-3">
+        <div class="tab-content mb-3" id="nav-tabContent">
+          <!-- 1 -->
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <div class="card mb-3">
+              <iframe
+                height="200"
+                src="https://www.youtube.com/embed/NAMvdbS4lk4"
+                frameborder="0"
+              ></iframe>
 
-          <iframe height="200" src="https://www.youtube.com/embed/NAMvdbS4lk4" frameborder="0"></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Шаг 1‍</h5>
+                <p class="card-text">
+                  Консультация по телефону и выезд на место с каталогом камней
+                  для выбора камня и контрольного замера.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div class="card-body">
-          <h5 class="card-title">Шаг 1‍</h5>
-          <p class="card-text">Консультация по телефону и выезд на место с каталогом камней для выбора камня и контрольного замера.</p>
+          <!-- 2 -->
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <div class="card mb-3">
+              <iframe
+                height="200"
+                src="https://www.youtube.com/embed/NAMvdbS4lk4"
+                frameborder="0"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Шаг ‍2</h5>
+                <p class="card-text">
+                  Оплата услуг наличными и безналичным способами. Есть
+                  возможноть оплаты чезер Kaspi Red или на рассрочку.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+            tabindex="0"
+          >
+            <div class="card mb-3">
+              <iframe
+                height="200"
+                src="https://www.youtube.com/embed/NAMvdbS4lk4"
+                frameborder="0"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Шаг ‍3</h5>
+                <p class="card-text">
+                  Изготовление заказа с использованием профессионального
+                  оборудования и инструментов. Срок от 3 до 7 дней. Точные сроки
+                  зависят от сложности работ.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div
+            class="tab-pane fade"
+            id="nav-four"
+            role="tabpanel"
+            aria-labelledby="nav-four-tab"
+            tabindex="0"
+          >
+            <div class="card mb-3">
+              <iframe
+                height="200"
+                src="https://www.youtube.com/embed/NAMvdbS4lk4"
+                frameborder="0"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Шаг ‍4</h5>
+                <p class="card-text">Доставка и установка в день доставки.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-
-        <div class="card mb-3">
-          <iframe height="200" src="https://www.youtube.com/embed/NAMvdbS4lk4" frameborder="0"></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Шаг ‍2</h5>
-            <p class="card-text">
-              Оплата услуг наличными и безналичным способами. Есть возможноть оплаты чезер Kaspi Red или на рассрочку.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="card mb-3">
-          <iframe height="200" src="https://www.youtube.com/embed/NAMvdbS4lk4" frameborder="0"></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Шаг ‍3</h5>
-            <p class="card-text">
-              Изготовление заказа с использованием профессионального оборудования и инструментов. Срок от 3 до 7 дней. Точные сроки зависят от сложности работ.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="card mb-3">
-          <iframe height="200" src="https://www.youtube.com/embed/NAMvdbS4lk4" frameborder="0"></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Шаг ‍4</h5>
-            <p class="card-text">
-              Доставка и установка в день доставки.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
+      <!--  -->
 
       <!-- FAQ Block -->
       <div class="faq-block p-3 mb-4">
