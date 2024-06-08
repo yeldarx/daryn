@@ -104,71 +104,49 @@
       <!-- Вызвать замерщика -->
 
       <div class="call-block p-3 mb-4">
-        <h3 class="text-center mb-4">
+        <h4 class="text-center mb-4">
           Не знаете сколько погонных метров вам нужно?
-        </h3>
+        </h4>
 
         <div class="text-center mb-4">
-          <p class="text-center">Можете бесплатно вызвать замерщика!</p>
-          <button id="openModalBtn" class="btn btn-primary">
-            Вызвать замерщика
-          </button>
-        </div>
-      </div>
+          
 
-      <!-- Modal -->
-      <div id="contactsModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h5 class="modal-title text-center">Контакты замерщика</h5>
-          <div class="contacts-block p-3 mb-4">
-            <div class="text-center">
-              <a
-                href="https://wa.me/77711020650/?text=Привет,%20я%20хочу%20вызвать%20замерщика"
-                class="btn btn-success mx-2"
-                target="_blank"
-              >
-                <i class="fab fa-whatsapp"></i> WhatsApp
-              </a>
-              <a
-                href="tel:+77711020650"
-                class="btn btn-success mx-2"
-                target="_blank"
-              >
-                <i class="fa-solid fa-phone-volume"></i> +7 (771) 102–06–50
-              </a>
-            </div>
+          
+        </div>
+
+        <!--  -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <p class="card-text">
+              <p class="text-center">
+                Можете вызвать замерщика, который вам вежливо все объяснит, измерит
+                и оценит. Бесплатно!
+              </p>
+
+              <div class="contacts-block p-3 mb-4">
+                <div class="text-center">
+                  <a
+                    href="https://wa.me/77711020650/?text=Привет,%20я%20хочу%20вызвать%20замерщика"
+                    class="btn btn-success mx-2"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                  </a>
+                  <a
+                    href="tel:+77711020650"
+                    class="btn btn-success mx-2"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-phone-volume"></i> +7 (771) 102–06–50
+                  </a>
+                </div>
+              </div>
+
+            </p>
           </div>
         </div>
+        <!--  -->
       </div>
-
-      <script>
-        // Get the modal
-        var modal = document.getElementById("contactsModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("openModalBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function () {
-          modal.style.display = "block";
-        };
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-          modal.style.display = "none";
-        };
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        };
-      </script>
 
       <!-- FAQ Block -->
       <div class="faq-block p-3 mb-4">

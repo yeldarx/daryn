@@ -2,11 +2,6 @@ body {
     background-color: #f8f9fa;
 }
 
-.contacts-block {
-    background-color: #e9ecef;
-    border-radius: 5px;
-}
-
 .calculator-block {
     background-color: #e9ecef;
     border-radius: 5px;
@@ -91,6 +86,12 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+.contacts-block {
+    /* background-color: #e9ecef; */
+    border-radius: 5px;
+}
+
 .contacts-block .btn {
     width: 100%;
     margin-bottom: 10px;
