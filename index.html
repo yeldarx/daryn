@@ -101,6 +101,72 @@
         <div id="warning" class="text-muted"></div>
       </div>
 
+      <div class="form-block p-3 mb-4">
+        <h3 class="text-center">Вызвать замерщика</h3>
+        <form id="measurementForm">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Ваше имя"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="Номер телефона"
+              required
+            />
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">
+              Отправить заявку
+            </button>
+          </div>
+        </form>
+        <div id="statusMessage" class="text-center mt-3"></div>
+      </div>
+      <script>
+        document
+          .getElementById("measurementForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+
+            var templateParams = {
+              name: name,
+              phone: phone,
+            };
+
+            emailjs
+              .send("service_bm28kcg", "template_fyxwfaa", templateParams)
+              .then(
+                function (response) {
+                  document.getElementById("statusMessage").innerText =
+                    "Заявка успешно отправлена. Ждите звонка.";
+                  document
+                    .getElementById("statusMessage")
+                    .classList.add("text-success");
+                },
+                function (error) {
+                  document.getElementById("statusMessage").innerText =
+                    "Ошибка при отправке заявки. Можете нас набрать?";
+                  document
+                    .getElementById("statusMessage")
+                    .classList.add("text-danger");
+                }
+              );
+          });
+      </script>
+
       <!-- FAQ Block -->
       <div class="faq-block p-3 mb-4">
         <h3 class="text-center">Вопросы и ответы</h3>
@@ -328,7 +394,7 @@
 
       <!-- Footer -->
       <footer class="text-center py-3">
-        <p>&copy; 2024 Qulan Tas | Создание сайта Yeldar.Org</p>
+        <p>&copy; 2024 Qulan Tas • Создание сайта Yeldar.Org</p>
       </footer>
     </div>
 
